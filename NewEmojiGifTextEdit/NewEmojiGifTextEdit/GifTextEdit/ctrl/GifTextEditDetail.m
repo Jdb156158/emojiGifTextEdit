@@ -73,8 +73,52 @@
 
 }
 
+//获取tableView上面所有的cell
+
+- (NSArray *)cellsForTableView:(UITableView *)tableView
+{
+
+    NSInteger sections = tableView.numberOfSections;
+
+    NSMutableArray *cells = [[NSMutableArray alloc] init];
+
+    for (int section = 0; section < sections; section++) {
+
+        NSInteger rows = [tableView numberOfRowsInSection:section];
+
+        for (int row = 0; row < rows; row++) {
+
+            NSIndexPath *indexPath = [NSIndexPath indexPathForRow:row inSection:section];
+
+            [cells addObject:[tableView cellForRowAtIndexPath:indexPath]];
+        }
+
+    }
+    return cells;
+
+}
+
+
 - (IBAction)clickOkBtn:(id)sender {
-    NSLog(@"====生成Gif====");
+    
+    NSLog(@"====生成Gif====:%@",[self cellsForTableView:self.mytableview]);
+    
+    NSArray *cellArray = [self cellsForTableView:self.mytableview];
+    NSMutableArray *textArray = [[NSMutableArray alloc] init];
+    for (int i = 0; i<cellArray.count; i++) {
+        GifTextEditDetailCell *cell = cellArray[i];
+        NSDictionary *dict = self.packageModels[i];
+        if (cell.textField.text.length>0) {
+            NSDictionary *newdict = @{@"sample":cell.textField.text,@"startFrame":dict[@"startFrame"],@"endFrame":dict[@"endFrame"]};
+            [textArray addObject:newdict];
+        }else{
+            NSDictionary *newdict = @{@"sample":cell.textField.placeholder,@"startFrame":dict[@"startFrame"],@"endFrame":dict[@"endFrame"]};
+            [textArray addObject:newdict];
+        }
+        
+    }
+        
+    
     NSString *gifPath = [[SDImageCache sharedImageCache] cachePathForKey:self.headImageUrl];
     NSData *gifData = nil;
     if (gifPath) {
@@ -89,7 +133,7 @@
         
         [SystemUtils requestAlbumAuth:^(bool isAllowed) {
             if (isAllowed) {
-                [GifUtils imgsFromGifWithData:gifData textDictArray:self.packageModels completeHnadler:^(float imgDelay, NSMutableArray *imgsArr) {
+                [GifUtils imgsFromGifWithData:gifData textDictArray:textArray completeHnadler:^(float imgDelay, NSMutableArray *imgsArr) {
                     
                     dispatch_async(dispatch_get_main_queue(), ^{
                         if (imgsArr.count>0) {
