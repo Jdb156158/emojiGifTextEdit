@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		07020FF126394B9200656920 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 07020FF026394B9200656920 /* AppDelegate.m */; };
-		07020FF426394B9200656920 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 07020FF326394B9200656920 /* SceneDelegate.m */; };
 		07020FF726394B9200656920 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07020FF626394B9200656920 /* ViewController.m */; };
 		07020FFA26394B9200656920 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07020FF826394B9200656920 /* Main.storyboard */; };
 		07020FFC26394B9600656920 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07020FFB26394B9600656920 /* Assets.xcassets */; };
@@ -24,8 +23,16 @@
 		070210312639745100656920 /* GifTextEditDetail.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0702102F2639745000656920 /* GifTextEditDetail.xib */; };
 		0702103E2639758F00656920 /* GifTextEditDetailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0702103C2639758F00656920 /* GifTextEditDetailCell.m */; };
 		0702103F2639758F00656920 /* GifTextEditDetailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0702103D2639758F00656920 /* GifTextEditDetailCell.xib */; };
-		07021043263975C700656920 /* GifTextEditDetailHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 07021042263975C700656920 /* GifTextEditDetailHeadView.m */; };
-		07021046263975D300656920 /* GifTextEditDetailHeadView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07021045263975D300656920 /* GifTextEditDetailHeadView.xib */; };
+		07836AB7263A514800CBF23E /* GifTextEditDetailHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 07836AB5263A514800CBF23E /* GifTextEditDetailHeadView.m */; };
+		07836AB8263A514800CBF23E /* GifTextEditDetailHeadView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07836AB6263A514800CBF23E /* GifTextEditDetailHeadView.xib */; };
+		07836AC2263A546100CBF23E /* GifTextEditDetailFootView.m in Sources */ = {isa = PBXBuildFile; fileRef = 07836AC0263A546100CBF23E /* GifTextEditDetailFootView.m */; };
+		07836AC3263A546100CBF23E /* GifTextEditDetailFootView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07836AC1263A546100CBF23E /* GifTextEditDetailFootView.xib */; };
+		07836AC7263A57B600CBF23E /* GifUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 07836AC6263A57B600CBF23E /* GifUtils.m */; };
+		07836ACB263A58B200CBF23E /* SystemUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 07836ACA263A58B200CBF23E /* SystemUtils.m */; };
+		07836AD5263A5AF900CBF23E /* HudManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 07836AD4263A5AF900CBF23E /* HudManager.m */; };
+		07836AD9263A5B3E00CBF23E /* UIViewController+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 07836AD8263A5B3E00CBF23E /* UIViewController+Utils.m */; };
+		07836ADD263A5B7C00CBF23E /* NSString+Time.m in Sources */ = {isa = PBXBuildFile; fileRef = 07836ADB263A5B7C00CBF23E /* NSString+Time.m */; };
+		07836AE1263A5CAE00CBF23E /* UIImage+Extras.m in Sources */ = {isa = PBXBuildFile; fileRef = 07836AE0263A5CAE00CBF23E /* UIImage+Extras.m */; };
 		C60F0658220099604443B21F /* Pods_EmojiGifTextEdit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 781F192F3ECDCD9B3B281C59 /* Pods_EmojiGifTextEdit.framework */; };
 /* End PBXBuildFile section */
 
@@ -34,8 +41,6 @@
 		07020FEC26394B9200656920 /* EmojiGifTextEdit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EmojiGifTextEdit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07020FEF26394B9200656920 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		07020FF026394B9200656920 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		07020FF226394B9200656920 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
-		07020FF326394B9200656920 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
 		07020FF526394B9200656920 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		07020FF626394B9200656920 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		07020FF926394B9200656920 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -59,9 +64,24 @@
 		0702103B2639758F00656920 /* GifTextEditDetailCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GifTextEditDetailCell.h; sourceTree = "<group>"; };
 		0702103C2639758F00656920 /* GifTextEditDetailCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GifTextEditDetailCell.m; sourceTree = "<group>"; };
 		0702103D2639758F00656920 /* GifTextEditDetailCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GifTextEditDetailCell.xib; sourceTree = "<group>"; };
-		07021041263975C700656920 /* GifTextEditDetailHeadView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GifTextEditDetailHeadView.h; sourceTree = "<group>"; };
-		07021042263975C700656920 /* GifTextEditDetailHeadView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GifTextEditDetailHeadView.m; sourceTree = "<group>"; };
-		07021045263975D300656920 /* GifTextEditDetailHeadView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GifTextEditDetailHeadView.xib; sourceTree = "<group>"; };
+		07836AB4263A514800CBF23E /* GifTextEditDetailHeadView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GifTextEditDetailHeadView.h; sourceTree = "<group>"; };
+		07836AB5263A514800CBF23E /* GifTextEditDetailHeadView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GifTextEditDetailHeadView.m; sourceTree = "<group>"; };
+		07836AB6263A514800CBF23E /* GifTextEditDetailHeadView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GifTextEditDetailHeadView.xib; sourceTree = "<group>"; };
+		07836ABF263A546100CBF23E /* GifTextEditDetailFootView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GifTextEditDetailFootView.h; sourceTree = "<group>"; };
+		07836AC0263A546100CBF23E /* GifTextEditDetailFootView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GifTextEditDetailFootView.m; sourceTree = "<group>"; };
+		07836AC1263A546100CBF23E /* GifTextEditDetailFootView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GifTextEditDetailFootView.xib; sourceTree = "<group>"; };
+		07836AC5263A57B600CBF23E /* GifUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GifUtils.h; sourceTree = "<group>"; };
+		07836AC6263A57B600CBF23E /* GifUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GifUtils.m; sourceTree = "<group>"; };
+		07836AC9263A58B200CBF23E /* SystemUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SystemUtils.h; sourceTree = "<group>"; };
+		07836ACA263A58B200CBF23E /* SystemUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SystemUtils.m; sourceTree = "<group>"; };
+		07836AD3263A5AF900CBF23E /* HudManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HudManager.h; sourceTree = "<group>"; };
+		07836AD4263A5AF900CBF23E /* HudManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HudManager.m; sourceTree = "<group>"; };
+		07836AD7263A5B3E00CBF23E /* UIViewController+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Utils.h"; sourceTree = "<group>"; };
+		07836AD8263A5B3E00CBF23E /* UIViewController+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Utils.m"; sourceTree = "<group>"; };
+		07836ADB263A5B7C00CBF23E /* NSString+Time.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Time.m"; sourceTree = "<group>"; };
+		07836ADC263A5B7C00CBF23E /* NSString+Time.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Time.h"; sourceTree = "<group>"; };
+		07836ADF263A5CAE00CBF23E /* UIImage+Extras.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+Extras.h"; sourceTree = "<group>"; };
+		07836AE0263A5CAE00CBF23E /* UIImage+Extras.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Extras.m"; sourceTree = "<group>"; };
 		781F192F3ECDCD9B3B281C59 /* Pods_EmojiGifTextEdit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EmojiGifTextEdit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBB83294646AC9343307E81D /* Pods-EmojiGifTextEdit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EmojiGifTextEdit.debug.xcconfig"; path = "Target Support Files/Pods-EmojiGifTextEdit/Pods-EmojiGifTextEdit.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -99,13 +119,12 @@
 		07020FEE26394B9200656920 /* EmojiGifTextEdit */ = {
 			isa = PBXGroup;
 			children = (
+				07836AE5263A9B7000CBF23E /* UtilsAndCategory */,
+				0702100926394D3F00656920 /* GifTextEdit */,
 				0702101626395DEA00656920 /* CellFlowLayout.h */,
 				0702101526395DEA00656920 /* CellFlowLayout.m */,
-				0702100926394D3F00656920 /* GifTextEdit */,
 				07020FEF26394B9200656920 /* AppDelegate.h */,
 				07020FF026394B9200656920 /* AppDelegate.m */,
-				07020FF226394B9200656920 /* SceneDelegate.h */,
-				07020FF326394B9200656920 /* SceneDelegate.m */,
 				07020FF526394B9200656920 /* ViewController.h */,
 				07020FF626394B9200656920 /* ViewController.m */,
 				07020FF826394B9200656920 /* Main.storyboard */,
@@ -140,9 +159,12 @@
 				0702103B2639758F00656920 /* GifTextEditDetailCell.h */,
 				0702103C2639758F00656920 /* GifTextEditDetailCell.m */,
 				0702103D2639758F00656920 /* GifTextEditDetailCell.xib */,
-				07021041263975C700656920 /* GifTextEditDetailHeadView.h */,
-				07021042263975C700656920 /* GifTextEditDetailHeadView.m */,
-				07021045263975D300656920 /* GifTextEditDetailHeadView.xib */,
+				07836AB4263A514800CBF23E /* GifTextEditDetailHeadView.h */,
+				07836AB5263A514800CBF23E /* GifTextEditDetailHeadView.m */,
+				07836AB6263A514800CBF23E /* GifTextEditDetailHeadView.xib */,
+				07836ABF263A546100CBF23E /* GifTextEditDetailFootView.h */,
+				07836AC0263A546100CBF23E /* GifTextEditDetailFootView.m */,
+				07836AC1263A546100CBF23E /* GifTextEditDetailFootView.xib */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -155,6 +177,25 @@
 				0702102F2639745000656920 /* GifTextEditDetail.xib */,
 			);
 			path = ctrl;
+			sourceTree = "<group>";
+		};
+		07836AE5263A9B7000CBF23E /* UtilsAndCategory */ = {
+			isa = PBXGroup;
+			children = (
+				07836ADF263A5CAE00CBF23E /* UIImage+Extras.h */,
+				07836AE0263A5CAE00CBF23E /* UIImage+Extras.m */,
+				07836ADC263A5B7C00CBF23E /* NSString+Time.h */,
+				07836ADB263A5B7C00CBF23E /* NSString+Time.m */,
+				07836AD7263A5B3E00CBF23E /* UIViewController+Utils.h */,
+				07836AD8263A5B3E00CBF23E /* UIViewController+Utils.m */,
+				07836AD3263A5AF900CBF23E /* HudManager.h */,
+				07836AD4263A5AF900CBF23E /* HudManager.m */,
+				07836AC9263A58B200CBF23E /* SystemUtils.h */,
+				07836ACA263A58B200CBF23E /* SystemUtils.m */,
+				07836AC5263A57B600CBF23E /* GifUtils.h */,
+				07836AC6263A57B600CBF23E /* GifUtils.m */,
+			);
+			path = UtilsAndCategory;
 			sourceTree = "<group>";
 		};
 		5559975C7138513166388857 /* Pods */ = {
@@ -234,9 +275,10 @@
 			files = (
 				07020FFF26394B9600656920 /* LaunchScreen.storyboard in Resources */,
 				07020FFC26394B9600656920 /* Assets.xcassets in Resources */,
-				07021046263975D300656920 /* GifTextEditDetailHeadView.xib in Resources */,
+				07836AB8263A514800CBF23E /* GifTextEditDetailHeadView.xib in Resources */,
 				0702100E26394E6900656920 /* GifTextEditCtrl.xib in Resources */,
 				070210312639745100656920 /* GifTextEditDetail.xib in Resources */,
+				07836AC3263A546100CBF23E /* GifTextEditDetailFootView.xib in Resources */,
 				070210122639543A00656920 /* test.plist in Resources */,
 				07020FFA26394B9200656920 /* Main.storyboard in Resources */,
 				0702103F2639758F00656920 /* GifTextEditDetailCell.xib in Resources */,
@@ -294,15 +336,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				0702101C2639602400656920 /* GifTextEditListCell.m in Sources */,
-				07021043263975C700656920 /* GifTextEditDetailHeadView.m in Sources */,
+				07836AE1263A5CAE00CBF23E /* UIImage+Extras.m in Sources */,
+				07836AB7263A514800CBF23E /* GifTextEditDetailHeadView.m in Sources */,
+				07836ACB263A58B200CBF23E /* SystemUtils.m in Sources */,
 				07020FF726394B9200656920 /* ViewController.m in Sources */,
 				0702103E2639758F00656920 /* GifTextEditDetailCell.m in Sources */,
+				07836AC7263A57B600CBF23E /* GifUtils.m in Sources */,
 				070210302639745100656920 /* GifTextEditDetail.m in Sources */,
+				07836AD5263A5AF900CBF23E /* HudManager.m in Sources */,
 				0702101726395DEA00656920 /* CellFlowLayout.m in Sources */,
 				0702100D26394E6900656920 /* GifTextEditCtrl.m in Sources */,
 				07020FF126394B9200656920 /* AppDelegate.m in Sources */,
 				0702100226394B9600656920 /* main.m in Sources */,
-				07020FF426394B9200656920 /* SceneDelegate.m in Sources */,
+				07836ADD263A5B7C00CBF23E /* NSString+Time.m in Sources */,
+				07836AC2263A546100CBF23E /* GifTextEditDetailFootView.m in Sources */,
+				07836AD9263A5B3E00CBF23E /* UIViewController+Utils.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

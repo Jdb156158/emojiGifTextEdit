@@ -1,13 +1,13 @@
 //
-//  GifTextEditDetailHeadView.m
+//  GifTextEditDetailCell.m
 //  EmojiGifTextEdit
 //
-//  Created by db J on 2021/4/29.
+//  Created by db J on 2021/4/28.
 //
 
-#import "GifTextEditDetailHeadView.h"
+#import "GifTextEditDetailCell.h"
 
-@implementation GifTextEditDetailHeadView
+@implementation GifTextEditDetailCell
 
 - (void)awakeFromNib {
     [super awakeFromNib];

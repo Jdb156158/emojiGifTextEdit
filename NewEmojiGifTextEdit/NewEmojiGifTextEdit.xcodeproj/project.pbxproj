@@ -1,0 +1,571 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		07836AFD263A9D3000CBF23E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 07836AFC263A9D3000CBF23E /* AppDelegate.m */; };
+		07836B06263A9D3000CBF23E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07836B04263A9D3000CBF23E /* Main.storyboard */; };
+		07836B08263A9D3300CBF23E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07836B07263A9D3300CBF23E /* Assets.xcassets */; };
+		07836B0B263A9D3300CBF23E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07836B09263A9D3300CBF23E /* LaunchScreen.storyboard */; };
+		07836B0E263A9D3300CBF23E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 07836B0D263A9D3300CBF23E /* main.m */; };
+		07836B1B263A9F3C00CBF23E /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07836B19263A9F3C00CBF23E /* HomeViewController.m */; };
+		07836B1C263A9F3C00CBF23E /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07836B1A263A9F3C00CBF23E /* HomeViewController.xib */; };
+		07836B4D263AA12F00CBF23E /* GifTextEditDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = 07836B2B263AA12F00CBF23E /* GifTextEditDetail.m */; };
+		07836B4E263AA12F00CBF23E /* GifTextEditDetail.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07836B2D263AA12F00CBF23E /* GifTextEditDetail.xib */; };
+		07836B4F263AA12F00CBF23E /* GifTextEditCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 07836B2E263AA12F00CBF23E /* GifTextEditCtrl.m */; };
+		07836B50263AA12F00CBF23E /* GifTextEditCtrl.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07836B2F263AA12F00CBF23E /* GifTextEditCtrl.xib */; };
+		07836B51263AA12F00CBF23E /* GifTextEditDetailFootView.m in Sources */ = {isa = PBXBuildFile; fileRef = 07836B31263AA12F00CBF23E /* GifTextEditDetailFootView.m */; };
+		07836B52263AA12F00CBF23E /* GifTextEditDetailHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 07836B32263AA12F00CBF23E /* GifTextEditDetailHeadView.m */; };
+		07836B53263AA12F00CBF23E /* GifTextEditDetailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 07836B33263AA12F00CBF23E /* GifTextEditDetailCell.m */; };
+		07836B54263AA12F00CBF23E /* GifTextEditDetailHeadView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07836B34263AA12F00CBF23E /* GifTextEditDetailHeadView.xib */; };
+		07836B55263AA12F00CBF23E /* GifTextEditListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 07836B35263AA12F00CBF23E /* GifTextEditListCell.m */; };
+		07836B56263AA12F00CBF23E /* GifTextEditDetailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07836B36263AA12F00CBF23E /* GifTextEditDetailCell.xib */; };
+		07836B57263AA12F00CBF23E /* GifTextEditListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07836B3A263AA12F00CBF23E /* GifTextEditListCell.xib */; };
+		07836B58263AA12F00CBF23E /* GifTextEditDetailFootView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07836B3C263AA12F00CBF23E /* GifTextEditDetailFootView.xib */; };
+		07836B59263AA12F00CBF23E /* CellFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 07836B3E263AA12F00CBF23E /* CellFlowLayout.m */; };
+		07836B5A263AA12F00CBF23E /* SystemUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 07836B40263AA12F00CBF23E /* SystemUtils.m */; };
+		07836B5B263AA12F00CBF23E /* UIImage+Extras.m in Sources */ = {isa = PBXBuildFile; fileRef = 07836B42263AA12F00CBF23E /* UIImage+Extras.m */; };
+		07836B5C263AA12F00CBF23E /* UIViewController+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 07836B46263AA12F00CBF23E /* UIViewController+Utils.m */; };
+		07836B5D263AA12F00CBF23E /* GifUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 07836B48263AA12F00CBF23E /* GifUtils.m */; };
+		07836B5E263AA12F00CBF23E /* HudManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 07836B4A263AA12F00CBF23E /* HudManager.m */; };
+		07836B5F263AA12F00CBF23E /* NSString+Time.m in Sources */ = {isa = PBXBuildFile; fileRef = 07836B4B263AA12F00CBF23E /* NSString+Time.m */; };
+		07836B62263AA15F00CBF23E /* test.plist in Resources */ = {isa = PBXBuildFile; fileRef = 07836B61263AA15F00CBF23E /* test.plist */; };
+		07836B6B263AB62D00CBF23E /* GifTextEditShowCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 07836B69263AB62D00CBF23E /* GifTextEditShowCtrl.m */; };
+		07836B6C263AB62D00CBF23E /* GifTextEditShowCtrl.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07836B6A263AB62D00CBF23E /* GifTextEditShowCtrl.xib */; };
+		9BBCE0C84C2B34C1FA53B04B /* Pods_NewEmojiGifTextEdit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2ADED9F0426017757DF7246 /* Pods_NewEmojiGifTextEdit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		07836AF8263A9D3000CBF23E /* NewEmojiGifTextEdit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewEmojiGifTextEdit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		07836AFB263A9D3000CBF23E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		07836AFC263A9D3000CBF23E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		07836B05263A9D3000CBF23E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		07836B07263A9D3300CBF23E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		07836B0A263A9D3300CBF23E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		07836B0C263A9D3300CBF23E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		07836B0D263A9D3300CBF23E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		07836B18263A9F3C00CBF23E /* HomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		07836B19263A9F3C00CBF23E /* HomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		07836B1A263A9F3C00CBF23E /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		07836B28263AA0B700CBF23E /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		07836B2B263AA12F00CBF23E /* GifTextEditDetail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GifTextEditDetail.m; sourceTree = "<group>"; };
+		07836B2C263AA12F00CBF23E /* GifTextEditDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GifTextEditDetail.h; sourceTree = "<group>"; };
+		07836B2D263AA12F00CBF23E /* GifTextEditDetail.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GifTextEditDetail.xib; sourceTree = "<group>"; };
+		07836B2E263AA12F00CBF23E /* GifTextEditCtrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GifTextEditCtrl.m; sourceTree = "<group>"; };
+		07836B2F263AA12F00CBF23E /* GifTextEditCtrl.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GifTextEditCtrl.xib; sourceTree = "<group>"; };
+		07836B31263AA12F00CBF23E /* GifTextEditDetailFootView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GifTextEditDetailFootView.m; sourceTree = "<group>"; };
+		07836B32263AA12F00CBF23E /* GifTextEditDetailHeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GifTextEditDetailHeadView.m; sourceTree = "<group>"; };
+		07836B33263AA12F00CBF23E /* GifTextEditDetailCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GifTextEditDetailCell.m; sourceTree = "<group>"; };
+		07836B34263AA12F00CBF23E /* GifTextEditDetailHeadView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GifTextEditDetailHeadView.xib; sourceTree = "<group>"; };
+		07836B35263AA12F00CBF23E /* GifTextEditListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GifTextEditListCell.m; sourceTree = "<group>"; };
+		07836B36263AA12F00CBF23E /* GifTextEditDetailCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GifTextEditDetailCell.xib; sourceTree = "<group>"; };
+		07836B37263AA12F00CBF23E /* GifTextEditDetailFootView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GifTextEditDetailFootView.h; sourceTree = "<group>"; };
+		07836B38263AA12F00CBF23E /* GifTextEditDetailHeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GifTextEditDetailHeadView.h; sourceTree = "<group>"; };
+		07836B39263AA12F00CBF23E /* GifTextEditDetailCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GifTextEditDetailCell.h; sourceTree = "<group>"; };
+		07836B3A263AA12F00CBF23E /* GifTextEditListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GifTextEditListCell.xib; sourceTree = "<group>"; };
+		07836B3B263AA12F00CBF23E /* GifTextEditListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GifTextEditListCell.h; sourceTree = "<group>"; };
+		07836B3C263AA12F00CBF23E /* GifTextEditDetailFootView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GifTextEditDetailFootView.xib; sourceTree = "<group>"; };
+		07836B3D263AA12F00CBF23E /* GifTextEditCtrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GifTextEditCtrl.h; sourceTree = "<group>"; };
+		07836B3E263AA12F00CBF23E /* CellFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CellFlowLayout.m; sourceTree = "<group>"; };
+		07836B40263AA12F00CBF23E /* SystemUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SystemUtils.m; sourceTree = "<group>"; };
+		07836B41263AA12F00CBF23E /* GifUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GifUtils.h; sourceTree = "<group>"; };
+		07836B42263AA12F00CBF23E /* UIImage+Extras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Extras.m"; sourceTree = "<group>"; };
+		07836B43263AA12F00CBF23E /* UIViewController+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Utils.h"; sourceTree = "<group>"; };
+		07836B44263AA12F00CBF23E /* HudManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HudManager.h; sourceTree = "<group>"; };
+		07836B45263AA12F00CBF23E /* NSString+Time.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Time.h"; sourceTree = "<group>"; };
+		07836B46263AA12F00CBF23E /* UIViewController+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Utils.m"; sourceTree = "<group>"; };
+		07836B47263AA12F00CBF23E /* UIImage+Extras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Extras.h"; sourceTree = "<group>"; };
+		07836B48263AA12F00CBF23E /* GifUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GifUtils.m; sourceTree = "<group>"; };
+		07836B49263AA12F00CBF23E /* SystemUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SystemUtils.h; sourceTree = "<group>"; };
+		07836B4A263AA12F00CBF23E /* HudManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HudManager.m; sourceTree = "<group>"; };
+		07836B4B263AA12F00CBF23E /* NSString+Time.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Time.m"; sourceTree = "<group>"; };
+		07836B4C263AA12F00CBF23E /* CellFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CellFlowLayout.h; sourceTree = "<group>"; };
+		07836B61263AA15F00CBF23E /* test.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = test.plist; sourceTree = "<group>"; };
+		07836B68263AB62D00CBF23E /* GifTextEditShowCtrl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GifTextEditShowCtrl.h; sourceTree = "<group>"; };
+		07836B69263AB62D00CBF23E /* GifTextEditShowCtrl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GifTextEditShowCtrl.m; sourceTree = "<group>"; };
+		07836B6A263AB62D00CBF23E /* GifTextEditShowCtrl.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GifTextEditShowCtrl.xib; sourceTree = "<group>"; };
+		307E150A43F34DCD4585D0F0 /* Pods-NewEmojiGifTextEdit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewEmojiGifTextEdit.debug.xcconfig"; path = "Target Support Files/Pods-NewEmojiGifTextEdit/Pods-NewEmojiGifTextEdit.debug.xcconfig"; sourceTree = "<group>"; };
+		7EC8BE7DCD576C832AF7FCB3 /* Pods-NewEmojiGifTextEdit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewEmojiGifTextEdit.release.xcconfig"; path = "Target Support Files/Pods-NewEmojiGifTextEdit/Pods-NewEmojiGifTextEdit.release.xcconfig"; sourceTree = "<group>"; };
+		E2ADED9F0426017757DF7246 /* Pods_NewEmojiGifTextEdit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NewEmojiGifTextEdit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		07836AF5263A9D3000CBF23E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9BBCE0C84C2B34C1FA53B04B /* Pods_NewEmojiGifTextEdit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		07836AEF263A9D3000CBF23E = {
+			isa = PBXGroup;
+			children = (
+				07836AFA263A9D3000CBF23E /* NewEmojiGifTextEdit */,
+				07836AF9263A9D3000CBF23E /* Products */,
+				14299AA7672D38ED82019177 /* Pods */,
+				62A4FA45BCF775923BE72595 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		07836AF9263A9D3000CBF23E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				07836AF8263A9D3000CBF23E /* NewEmojiGifTextEdit.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		07836AFA263A9D3000CBF23E /* NewEmojiGifTextEdit */ = {
+			isa = PBXGroup;
+			children = (
+				07836B29263AA12F00CBF23E /* GifTextEdit */,
+				07836B3F263AA12F00CBF23E /* UtilsAndCategory */,
+				07836AFB263A9D3000CBF23E /* AppDelegate.h */,
+				07836AFC263A9D3000CBF23E /* AppDelegate.m */,
+				07836B18263A9F3C00CBF23E /* HomeViewController.h */,
+				07836B19263A9F3C00CBF23E /* HomeViewController.m */,
+				07836B1A263A9F3C00CBF23E /* HomeViewController.xib */,
+				07836B04263A9D3000CBF23E /* Main.storyboard */,
+				07836B07263A9D3300CBF23E /* Assets.xcassets */,
+				07836B09263A9D3300CBF23E /* LaunchScreen.storyboard */,
+				07836B61263AA15F00CBF23E /* test.plist */,
+				07836B0C263A9D3300CBF23E /* Info.plist */,
+				07836B0D263A9D3300CBF23E /* main.m */,
+				07836B28263AA0B700CBF23E /* PrefixHeader.pch */,
+			);
+			path = NewEmojiGifTextEdit;
+			sourceTree = "<group>";
+		};
+		07836B29263AA12F00CBF23E /* GifTextEdit */ = {
+			isa = PBXGroup;
+			children = (
+				07836B2A263AA12F00CBF23E /* ctrl */,
+				07836B30263AA12F00CBF23E /* view */,
+				07836B3D263AA12F00CBF23E /* GifTextEditCtrl.h */,
+				07836B2E263AA12F00CBF23E /* GifTextEditCtrl.m */,
+				07836B2F263AA12F00CBF23E /* GifTextEditCtrl.xib */,
+			);
+			path = GifTextEdit;
+			sourceTree = "<group>";
+		};
+		07836B2A263AA12F00CBF23E /* ctrl */ = {
+			isa = PBXGroup;
+			children = (
+				07836B2C263AA12F00CBF23E /* GifTextEditDetail.h */,
+				07836B2B263AA12F00CBF23E /* GifTextEditDetail.m */,
+				07836B2D263AA12F00CBF23E /* GifTextEditDetail.xib */,
+				07836B68263AB62D00CBF23E /* GifTextEditShowCtrl.h */,
+				07836B69263AB62D00CBF23E /* GifTextEditShowCtrl.m */,
+				07836B6A263AB62D00CBF23E /* GifTextEditShowCtrl.xib */,
+			);
+			path = ctrl;
+			sourceTree = "<group>";
+		};
+		07836B30263AA12F00CBF23E /* view */ = {
+			isa = PBXGroup;
+			children = (
+				07836B3B263AA12F00CBF23E /* GifTextEditListCell.h */,
+				07836B35263AA12F00CBF23E /* GifTextEditListCell.m */,
+				07836B3A263AA12F00CBF23E /* GifTextEditListCell.xib */,
+				07836B39263AA12F00CBF23E /* GifTextEditDetailCell.h */,
+				07836B33263AA12F00CBF23E /* GifTextEditDetailCell.m */,
+				07836B36263AA12F00CBF23E /* GifTextEditDetailCell.xib */,
+				07836B38263AA12F00CBF23E /* GifTextEditDetailHeadView.h */,
+				07836B32263AA12F00CBF23E /* GifTextEditDetailHeadView.m */,
+				07836B34263AA12F00CBF23E /* GifTextEditDetailHeadView.xib */,
+				07836B37263AA12F00CBF23E /* GifTextEditDetailFootView.h */,
+				07836B31263AA12F00CBF23E /* GifTextEditDetailFootView.m */,
+				07836B3C263AA12F00CBF23E /* GifTextEditDetailFootView.xib */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		07836B3F263AA12F00CBF23E /* UtilsAndCategory */ = {
+			isa = PBXGroup;
+			children = (
+				07836B4C263AA12F00CBF23E /* CellFlowLayout.h */,
+				07836B3E263AA12F00CBF23E /* CellFlowLayout.m */,
+				07836B49263AA12F00CBF23E /* SystemUtils.h */,
+				07836B40263AA12F00CBF23E /* SystemUtils.m */,
+				07836B41263AA12F00CBF23E /* GifUtils.h */,
+				07836B48263AA12F00CBF23E /* GifUtils.m */,
+				07836B43263AA12F00CBF23E /* UIViewController+Utils.h */,
+				07836B46263AA12F00CBF23E /* UIViewController+Utils.m */,
+				07836B44263AA12F00CBF23E /* HudManager.h */,
+				07836B4A263AA12F00CBF23E /* HudManager.m */,
+				07836B45263AA12F00CBF23E /* NSString+Time.h */,
+				07836B4B263AA12F00CBF23E /* NSString+Time.m */,
+				07836B47263AA12F00CBF23E /* UIImage+Extras.h */,
+				07836B42263AA12F00CBF23E /* UIImage+Extras.m */,
+			);
+			path = UtilsAndCategory;
+			sourceTree = "<group>";
+		};
+		14299AA7672D38ED82019177 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				307E150A43F34DCD4585D0F0 /* Pods-NewEmojiGifTextEdit.debug.xcconfig */,
+				7EC8BE7DCD576C832AF7FCB3 /* Pods-NewEmojiGifTextEdit.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		62A4FA45BCF775923BE72595 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E2ADED9F0426017757DF7246 /* Pods_NewEmojiGifTextEdit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		07836AF7263A9D3000CBF23E /* NewEmojiGifTextEdit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 07836B11263A9D3300CBF23E /* Build configuration list for PBXNativeTarget "NewEmojiGifTextEdit" */;
+			buildPhases = (
+				F788B491B9A3C1D218FB2959 /* [CP] Check Pods Manifest.lock */,
+				07836AF4263A9D3000CBF23E /* Sources */,
+				07836AF5263A9D3000CBF23E /* Frameworks */,
+				07836AF6263A9D3000CBF23E /* Resources */,
+				ACF7B3377260008A9C4D6DAC /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NewEmojiGifTextEdit;
+			productName = NewEmojiGifTextEdit;
+			productReference = 07836AF8263A9D3000CBF23E /* NewEmojiGifTextEdit.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		07836AF0263A9D3000CBF23E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					07836AF7263A9D3000CBF23E = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = 07836AF3263A9D3000CBF23E /* Build configuration list for PBXProject "NewEmojiGifTextEdit" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 07836AEF263A9D3000CBF23E;
+			productRefGroup = 07836AF9263A9D3000CBF23E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				07836AF7263A9D3000CBF23E /* NewEmojiGifTextEdit */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		07836AF6263A9D3000CBF23E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07836B0B263A9D3300CBF23E /* LaunchScreen.storyboard in Resources */,
+				07836B4E263AA12F00CBF23E /* GifTextEditDetail.xib in Resources */,
+				07836B50263AA12F00CBF23E /* GifTextEditCtrl.xib in Resources */,
+				07836B6C263AB62D00CBF23E /* GifTextEditShowCtrl.xib in Resources */,
+				07836B54263AA12F00CBF23E /* GifTextEditDetailHeadView.xib in Resources */,
+				07836B08263A9D3300CBF23E /* Assets.xcassets in Resources */,
+				07836B58263AA12F00CBF23E /* GifTextEditDetailFootView.xib in Resources */,
+				07836B57263AA12F00CBF23E /* GifTextEditListCell.xib in Resources */,
+				07836B06263A9D3000CBF23E /* Main.storyboard in Resources */,
+				07836B62263AA15F00CBF23E /* test.plist in Resources */,
+				07836B56263AA12F00CBF23E /* GifTextEditDetailCell.xib in Resources */,
+				07836B1C263A9F3C00CBF23E /* HomeViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		ACF7B3377260008A9C4D6DAC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NewEmojiGifTextEdit/Pods-NewEmojiGifTextEdit-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NewEmojiGifTextEdit/Pods-NewEmojiGifTextEdit-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NewEmojiGifTextEdit/Pods-NewEmojiGifTextEdit-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F788B491B9A3C1D218FB2959 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NewEmojiGifTextEdit-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		07836AF4263A9D3000CBF23E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07836AFD263A9D3000CBF23E /* AppDelegate.m in Sources */,
+				07836B59263AA12F00CBF23E /* CellFlowLayout.m in Sources */,
+				07836B5E263AA12F00CBF23E /* HudManager.m in Sources */,
+				07836B5C263AA12F00CBF23E /* UIViewController+Utils.m in Sources */,
+				07836B4F263AA12F00CBF23E /* GifTextEditCtrl.m in Sources */,
+				07836B6B263AB62D00CBF23E /* GifTextEditShowCtrl.m in Sources */,
+				07836B5D263AA12F00CBF23E /* GifUtils.m in Sources */,
+				07836B52263AA12F00CBF23E /* GifTextEditDetailHeadView.m in Sources */,
+				07836B0E263A9D3300CBF23E /* main.m in Sources */,
+				07836B55263AA12F00CBF23E /* GifTextEditListCell.m in Sources */,
+				07836B4D263AA12F00CBF23E /* GifTextEditDetail.m in Sources */,
+				07836B1B263A9F3C00CBF23E /* HomeViewController.m in Sources */,
+				07836B5A263AA12F00CBF23E /* SystemUtils.m in Sources */,
+				07836B5F263AA12F00CBF23E /* NSString+Time.m in Sources */,
+				07836B53263AA12F00CBF23E /* GifTextEditDetailCell.m in Sources */,
+				07836B5B263AA12F00CBF23E /* UIImage+Extras.m in Sources */,
+				07836B51263AA12F00CBF23E /* GifTextEditDetailFootView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		07836B04263A9D3000CBF23E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				07836B05263A9D3000CBF23E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		07836B09263A9D3300CBF23E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				07836B0A263A9D3300CBF23E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		07836B0F263A9D3300CBF23E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		07836B10263A9D3300CBF23E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		07836B12263A9D3300CBF23E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 307E150A43F34DCD4585D0F0 /* Pods-NewEmojiGifTextEdit.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F7YBM7MWE6;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/NewEmojiGifTextEdit/PrefixHeader.pch";
+				INFOPLIST_FILE = NewEmojiGifTextEdit/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.NewEmojiGifTextEdit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		07836B13263A9D3300CBF23E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7EC8BE7DCD576C832AF7FCB3 /* Pods-NewEmojiGifTextEdit.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F7YBM7MWE6;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/NewEmojiGifTextEdit/PrefixHeader.pch";
+				INFOPLIST_FILE = NewEmojiGifTextEdit/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.NewEmojiGifTextEdit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		07836AF3263A9D3000CBF23E /* Build configuration list for PBXProject "NewEmojiGifTextEdit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07836B0F263A9D3300CBF23E /* Debug */,
+				07836B10263A9D3300CBF23E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		07836B11263A9D3300CBF23E /* Build configuration list for PBXNativeTarget "NewEmojiGifTextEdit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07836B12263A9D3300CBF23E /* Debug */,
+				07836B13263A9D3300CBF23E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 07836AF0263A9D3000CBF23E /* Project object */;
+}

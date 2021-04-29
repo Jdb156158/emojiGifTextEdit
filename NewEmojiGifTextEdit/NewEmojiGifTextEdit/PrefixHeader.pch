@@ -1,8 +1,8 @@
 //
 //  PrefixHeader.pch
-//  EmojiGifTextEdit
+//  NewEmojiGifTextEdit
 //
-//  Created by db J on 2021/4/28.
+//  Created by db J on 2021/4/29.
 //
 
 #ifndef PrefixHeader_pch
@@ -10,7 +10,6 @@
 
 // Include any system framework and library headers here that should be included in all compilation units.
 // You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
-
 //系统
 #define K_W [UIScreen mainScreen].bounds.size.width
 #define K_H [UIScreen mainScreen].bounds.size.height
@@ -67,6 +66,8 @@
 #import <SDWebImage/UIImageView+WebCache.h>
 #import <SDWebImage/SDWebImagePrefetcher.h>
 #import <SDWebImage/UIView+WebCache.h>
+#import <FLAnimatedImage/FLAnimatedImage.h>
+#import <FLAnimatedImage/FLAnimatedImageView.h>
 
 #import "UIViewController+Utils.h"
 #import "UIImage+Extras.h"

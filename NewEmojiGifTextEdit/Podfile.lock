@@ -1,4 +1,5 @@
 PODS:
+  - FLAnimatedImage (1.0.15)
   - IQKeyboardManager (6.5.6)
   - Masonry (1.1.0)
   - MBProgressHUD (1.0.0)
@@ -7,6 +8,7 @@ PODS:
   - SDWebImage/Core (5.11.0)
 
 DEPENDENCIES:
+  - FLAnimatedImage
   - IQKeyboardManager
   - Masonry
   - MBProgressHUD (~> 1.0.0)
@@ -14,17 +16,19 @@ DEPENDENCIES:
 
 SPEC REPOS:
   trunk:
+    - FLAnimatedImage
     - IQKeyboardManager
     - Masonry
     - MBProgressHUD
     - SDWebImage
 
 SPEC CHECKSUMS:
+  FLAnimatedImage: dd3db277b17e909ec3c7fd41adfce79b321d960e
   IQKeyboardManager: 2a6e97afdafc7becf0cb17a9a8d795e3a980717f
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
   SDWebImage: 7acbb57630ac7db4a495547fb73916ff3e432f6b
 
-PODFILE CHECKSUM: daedbe1b3f835d4b394310db7ef6b8056f738b0d
+PODFILE CHECKSUM: 4a965eec6125ce96de9d19e724b8a77e69ed2fbe
 
 COCOAPODS: 1.10.0

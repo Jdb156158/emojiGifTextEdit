@@ -9,6 +9,7 @@
 #import "GifTextEditDetailCell.h"
 #import "GifTextEditDetailHeadView.h"
 #import "GifTextEditDetailFootView.h"
+#import "GifTextEditShowCtrl.h"
 @interface GifTextEditDetail ()<UITableViewDelegate,UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UITableView *mytableview;
 @property (strong, nonatomic)  NSMutableArray *packageModels;
@@ -27,7 +28,7 @@
     self.packageModels = [NSMutableArray arrayWithArray:array];
     self.headImageUrl = self.dict[@"url"];
     [self setupTableView];
-    
+        
 }
 
 #pragma mark - get
@@ -83,29 +84,22 @@
     }
     
     [HudManager showLoading];
-    
-    UIImage *markImg = [UIImage imageNamed:@"clearMark"];
-    
+        
     dispatch_async(dispatch_get_global_queue(0, 0), ^{
         
         [SystemUtils requestAlbumAuth:^(bool isAllowed) {
             if (isAllowed) {
                 [GifUtils imgsFromGifWithData:gifData textDictArray:self.packageModels completeHnadler:^(float imgDelay, NSMutableArray *imgsArr) {
-                                
-                    imgDelay = imgDelay < 0.1 ? 0.1 : imgDelay;
                     
-                    if (imgsArr.count>0) {
-                        [GifUtils gifWithImages:imgsArr withDelay:imgDelay targetPath:PATH_GIF markImage:markImg markTextIV:markImg markFrame:CGRectMake(0, 0, 0, 0) markTextIVFrame:CGRectMake(0, 0, 0, 0) isRecord:YES isPhotoToGif:YES];
-                        dispatch_async(dispatch_get_main_queue(), ^{
-                            [self saveGif];
-                        });
-                    }else{
-                        dispatch_async(dispatch_get_main_queue(), ^{
+                    dispatch_async(dispatch_get_main_queue(), ^{
+                        if (imgsArr.count>0) {
+                            [self imagesToGif:imgsArr];
+                        }else{
                             [HudManager hideLoading];
                             [HudManager showWord:@"生成GIF失败"];
-                        });
-                    }
-                    
+                        }
+                    });
+                                
                 }];
             }
         }];
@@ -113,23 +107,20 @@
     });
 }
 
-- (void)saveGif{
-    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-        [SystemUtils saveGifToPhotoAlbum:PATH_GIF completion:^(BOOL isSuccess, NSError *error) {
-              NSData *data = [NSData dataWithContentsOfFile:PATH_GIF];
-            NSLog(@"filePath = %@  gif = %.2f M ", PATH_GIF,(CGFloat)data.length / (1024.0 *1024));
-            dispatch_async(dispatch_get_main_queue(), ^{
-                [HudManager hideLoading];
-                if (isSuccess){
-                    [HudManager showWord:@"生成GIF成功"];
-                }
-                else{
-                    [HudManager showWord:@"生成GIF失败"];
-                }
-            });
+- (void)imagesToGif:(NSArray *)images{
+    dispatch_async(dispatch_get_global_queue(0, 0), ^{
+        [GifUtils gifWithImages:images withDelay:0.1 targetPath:PATH_GIF];
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [HudManager hideLoading];
+            //弹框展示
+            [GifTextEditShowCtrl showWithDismissCallback:^{
+                
+            }];
             
-        }];
+        });
     });
     
 }
+
+
 @end

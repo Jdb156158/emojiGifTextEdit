@@ -1,13 +1,15 @@
 # Uncomment the next line to define a global platform for your project
 # platform :ios, '9.0'
 
-target 'EmojiGifTextEdit' do
+target 'NewEmojiGifTextEdit' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
 
-  # Pods for EmojiGifTextEdit
+  # Pods for NewEmojiGifTextEdit
   pod 'Masonry'
   pod 'SDWebImage'
   pod 'IQKeyboardManager'
   pod 'MBProgressHUD', '~> 1.0.0'
+  pod 'FLAnimatedImage'
+  
 end
